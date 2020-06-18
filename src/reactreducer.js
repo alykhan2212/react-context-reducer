@@ -4,7 +4,8 @@ const myReducer = (state, action) =>{
             return state + 1
         case 'DECREMENT':
             return state - 1
- 
+        default:
+            throw new Error()
 
     }
 

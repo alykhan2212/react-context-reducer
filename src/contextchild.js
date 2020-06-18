@@ -10,7 +10,9 @@ const Contextchild = () =>{
         
         <h1>Context value is {contextValue[0]}</h1>
             {/* below line changing context value using useState */}
-            <button onClick={()=>{contextValue[1](10)}}>Change value</button>
+            <button onClick={()=>{contextValue[1](--contextValue[0])}}>-</button>
+            
+            <button onClick={()=>{contextValue[1](++contextValue[0])}}>+</button>
             
         </div>
  
